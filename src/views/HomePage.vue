@@ -1,17 +1,14 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar>
-        <div class="inicio">
-          <a href="https://ionicframework.com/docs/components">
-            <img
-              class="Logo"
-              alt="Logo"
-              src="@/../public/assets/icon/Logo_nuevo_ucen1.png"
-            />
-          </a>
-          <ion-title><h1>Mi Listado</h1></ion-title>
-        </div>
+      <ion-toolbar color="medium">
+        <img
+          slot="start"
+          class="Logo"
+          alt="Logo"
+          src="@/../public/assets/icon/Logo_nuevo_ucen1.png"
+        />
+        <ion-title class="ion-padding">Mi Listado</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -93,6 +90,8 @@ export default defineComponent({
 }
 h1 {
   display: inline-block;
-  background: green;
+}
+ion-toolbar {
+  height: 70px;
 }
 </style>
