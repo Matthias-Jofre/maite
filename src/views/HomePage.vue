@@ -91,7 +91,4 @@ export default defineComponent({
 h1 {
   display: inline-block;
 }
-ion-toolbar {
-  height: 70px;
-}
 </style>
